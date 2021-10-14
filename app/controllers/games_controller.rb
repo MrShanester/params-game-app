@@ -9,6 +9,20 @@ class GamesController < ApplicationController
   end
 
   def number
-    
+    num = params["my_number"]
+    if num.to_i == 36
+      render json: {message: "You Guessed Right! The number was 36."}
+    elsif num.to_i < 36
+      render json: {message: "You guessed too low. Try Again."}
+    elsif num.to_i > 36
+      render json: {message: "You guessed too high. Try Again."}
+    else
+      render json: {message: "Not a Valid Input"}
+    end
+  end
+
+  def villian
+    input = params["wildcard"]
+    render json: {message: "You fool! You brought the #{input} right to me! With its power I shall rule the world!"}
   end
 end
