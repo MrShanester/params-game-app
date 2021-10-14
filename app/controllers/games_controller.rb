@@ -36,11 +36,11 @@ class GamesController < ApplicationController
 
   def villian
     input = params["wildcard"]
-    render json: {message: "You fool! You brought the #{input} right to me! With its power I shall rule the world!"}
+    render json: {message: "You fool! You brought the #{input} right to me! With its power I shall crush (generic_hero) and rule the world!"}
   end
 
   def hero
     input = params["wildcard"]
-    render json: {message: "Aha! Righteous page you have brought me a fine talisman! With the help of the wonderous #{input} we shall strike down evil together!"}
+    render json: {message: "Aha! Righteous page you have brought me a fine talisman! With the help of the wonderous #{input} we shall strike down (generic_villian) together!"}
   end
 end
