@@ -38,4 +38,9 @@ class GamesController < ApplicationController
     input = params["wildcard"]
     render json: {message: "You fool! You brought the #{input} right to me! With its power I shall rule the world!"}
   end
+
+  def hero
+    input = params["wildcard"]
+    render json: {message: "Aha! Righteous page you have brought me a fine talisman! With the help of the wonderous #{input} we shall strike down evil together!"}
+  end
 end

@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get "/number_game" => "games#number"
   get "/villian_game/:wildcard" => "games#villian"
   get "/url_number_game/:wildcard" => "games#url_number"
+  get "/hero_game/:wildcard" => "games#hero"
 end
