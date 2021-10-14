@@ -22,8 +22,8 @@ class GamesController < ApplicationController
   end
 
   def url_number
-    num1 = params["wildcard"]
-    num2 = params["wildcard2"]
+    num1 = params["wildcard"].to_i
+    num2 = params["wildcard2"].to_i
     num = num1 + num2
     if num.to_i == 36
       render json: {message: "You Guessed Right! The number was 36."}
