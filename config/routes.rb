@@ -2,5 +2,6 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get "/name_game" => "games#name"
   get "/number_game" => "games#number"
-  get "/villian_game/:wildcard" =>"games#villian"
+  get "/villian_game/:wildcard" => "games#villian"
+  get "/url_number_game/:wildcard" => "games#url_number"
 end
