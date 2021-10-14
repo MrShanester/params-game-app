@@ -4,3 +4,8 @@ content-type: application/json
 {
   "Encryption": "Secret box"
 }
+
+###
+ 
+POST http://localhost:3000/access/hugh/swordfish.json 
+content-type: application/json

@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get "/hero_game/:wildcard" => "games#hero"
   get "/bank_sim/:wildcard" => "games#bank"
   post "/secret" => "games#secret"
+  post "/access/:username/:password" => "games#access"
 end

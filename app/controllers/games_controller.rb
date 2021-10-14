@@ -55,4 +55,15 @@ class GamesController < ApplicationController
     input = params["Encryption"]
     render json: {message: input}
   end
+
+  def access 
+    username = params["username"]
+    password = params["password"]
+    if username == "hugh" && password == "swordfish"
+      output = "Valid Credentials"
+    else 
+      output = "InValid Credentials"
+    end
+    render json: {message: output}
+  end
 end
