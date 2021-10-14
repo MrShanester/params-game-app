@@ -1,0 +1,6 @@
+POST http://localhost:3000/secret.json 
+content-type: application/json
+
+{
+  "Encryption": "Secret box"
+}

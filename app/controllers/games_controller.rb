@@ -50,4 +50,9 @@ class GamesController < ApplicationController
     input = params["wildcard"]
     render json: {message: "I'm sorry, but your last possesion, #{input}, isn't nearly enough to pay off your crippling debt."}
   end
+
+  def secret
+    input = params["Encryption"]
+    render json: {message: input}
+  end
 end
